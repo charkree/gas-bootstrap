@@ -10,12 +10,12 @@
 #grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
 
 // Reset utility classes due to specificity
-[class*="span"].hide,
-.row-fluid [class*="span"].hide {
+.span.hide,
+.row-fluid .span.hide {
   display: none;
 }
 
-[class*="span"].pull-right,
-.row-fluid [class*="span"].pull-right {
+.span.pull-right,
+.row-fluid .span.pull-right {
   float: right;
 }
