@@ -94,7 +94,7 @@
 
         this.escape()
 
-        $(document).off('focusin.modal')
+        $('.body').off('focusin.modal')
 
         this.$element
           .removeClass('in')
@@ -107,7 +107,7 @@
 
     , enforceFocus: function () {
         var that = this
-        $(document).on('focusin.modal', function (e) {
+        $('.body').on('focusin.modal', function (e) {
           if (that.$element[0] !== e.target && !that.$element.has(e.target).length) {
             that.$element.focus()
           }
@@ -229,7 +229,7 @@
  /* MODAL DATA-API
   * ============== */
 
-  $(document).on('click.modal.data-api', '[data-toggle="modal"]', function (e) {
+  $('.body').on('click.modal.data-api', '[data-toggle="modal"]', function (e) {
     var $this = $(this)
       , href = $this.attr('href')
       , $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) //strip for ie7

@@ -94,6 +94,6 @@
  /* ALERT DATA-API
   * ============== */
 
-  $(document).on('click.alert.data-api', dismiss, Alert.prototype.close)
+  $('.body').on('click.alert.data-api', dismiss, Alert.prototype.close)
 
 }(window.jQuery);

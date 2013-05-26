@@ -38,7 +38,7 @@
   Affix.prototype.checkPosition = function () {
     if (!this.$element.is(':visible')) return
 
-    var scrollHeight = $(document).height()
+    var scrollHeight = $('.body').height()
       , scrollTop = this.$window.scrollTop()
       , position = this.$element.offset()
       , offset = this.options.offset

@@ -3,14 +3,11 @@
 // --------------------------------------------------
 
 
-// TABLETS AND BELOW
-// -----------------
-@media (max-width: @navbarCollapseWidth) {
 
   // UNFIX THE TOPBAR
   // ----------------
   // Remove any padding from the body
-  body {
+  .body {
     padding-top: 0;
   }
   // Unfix the navbars
@@ -172,13 +169,9 @@
   }
 
 
-}
-
-
 // DEFAULT DESKTOP
 // ---------------
 
-@media (min-width: @navbarCollapseDesktopWidth) {
 
   // Required to make the collapsing navbar work on regular desktops
   .nav-collapse.collapse {
@@ -186,4 +179,3 @@
     overflow: visible !important;
   }
 
-}
