@@ -154,6 +154,7 @@
  /* COLLAPSE DATA-API
   * ================= */
 
+	$(function(){
   $('.body').on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
     var $this = $(this), href
       , target = $this.attr('data-target')
@@ -163,5 +164,6 @@
     $this[$(target).hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
     $(target).collapse(option)
   })
+	});
 
 }(window.jQuery);

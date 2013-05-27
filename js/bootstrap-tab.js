@@ -136,9 +136,9 @@
  /* TAB DATA-API
   * ============ */
 
-  $('.body').on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
+  $(function(){$('.body').on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
     e.preventDefault()
     $(this).tab('show')
-  })
+  })});
 
 }(window.jQuery);

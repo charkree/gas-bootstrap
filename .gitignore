@@ -23,6 +23,7 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+NUL*
 
 # Komodo
 *.komodoproject
