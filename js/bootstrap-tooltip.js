@@ -347,7 +347,7 @@
   , placement: 'top'
   , selector: false
   , template: '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
-  , trigger: 'hover focus'
+  , trigger: 'click focus'
   , title: ''
   , delay: 0
   , html: false
