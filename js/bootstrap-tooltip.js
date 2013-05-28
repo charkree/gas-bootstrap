@@ -263,10 +263,15 @@
 
   , getPosition: function () {
       var el = this.$element[0]
-      return $.extend({}, (typeof el.getBoundingClientRect == 'function') ? el.getBoundingClientRect() : {
+      var rect = (typeof el.getBoundingClientRect == 'function') ? el.getBoundingClientRect() : {
         width: el.offsetWidth
       , height: el.offsetHeight
-      }, this.$element.offset())
+      };
+      
+      rect.width = el.offsetWidth;
+      rect.height = el.offsetHeight;
+      
+      return $.extend({}, rect, this.$element.offset())
     }
 
   , getTitle: function () {
